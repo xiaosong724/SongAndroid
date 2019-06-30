@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_beijin"
+    android:layout_width="match_parent">
+
+    <!--<TextView-->
+        <!--android:id="@+id/edit_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="用户登录界面"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="24sp" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你必须说得话"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入我是繁狗我最乖"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="密码"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="24sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/password"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="请输入您的密码"/>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:text="提交"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:onClick="start"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/luntan"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:text="LoveLog"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:onClick="start"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/roottz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送评论推送"
+            android:onClick="sendChatMsg"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送日志推送"
+            android:onClick="sendSubscribeMsg"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

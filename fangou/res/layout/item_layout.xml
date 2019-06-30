@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:background="#FFF0F5"
+        android:id="@+id/tv_dellogimg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/progresstyle"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFF0F5"
+        android:layout_marginLeft="4dp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:text="title" />
+        <TextView
+            android:layout_below="@+id/tv_title"
+            android:id="@+id/tv_val"
+            android:textSize="10dp"
+            android:maxLines="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除日期:2019-09-09 8:00"/>
+        <TextView
+            android:layout_below="@+id/tv_val"
+            android:id="@+id/tv_val2"
+            android:textSize="10dp"
+            android:maxLines="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除日期:2019-09-09232423423 8:00"/>
+
+
+        <Button
+            android:id="@+id/btn_recover"
+            android:layout_width="48dp"
+            android:layout_height="64dp"
+            android:layout_alignRight="@+id/tv_val"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:state_pressed="false"
+            android:background="@drawable/button_click_color"
+            android:text="恢复" />
+
+    </RelativeLayout>
+
+</LinearLayout>
